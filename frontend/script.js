@@ -12,7 +12,7 @@ const getData = async () => {
 
 function displayAllData(data) {
   displayProfessionalName(data.professionalName);
-  displayImage(data.base64Image);
+  displayImage(data.imageUrl);
   displayPrimaryDescription(data);
   displayWorkDescription(data);
   displayLinkTitleText(data);
@@ -25,10 +25,11 @@ function displayProfessionalName(n) {
   professionalName.innerHTML = n;
 }
 
-function displayImage(img) {
+function displayImage(imgUrl) {
   let image = document.getElementById('professionalImage');
-  image.src = `data:image/png;base64, ${img}`;
+  image.src = imgUrl;
 }
+
 function displayPrimaryDescription(data) {
   let nameLink = document.getElementById('nameLink');
   nameLink.innerHTML = data.nameLink.firstName;
