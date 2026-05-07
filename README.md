@@ -1,0 +1,2 @@
+# W01 Individual Activity: Develop an API
+This assignment is about creating a simple backend API for a frontend that is already finished. The goal is to practice how a server sends data to a webpage without changing the existing HTML, CSS, or JavaScript. You will build a small Node.js server with a GET endpoint, test it with a REST client, and then confirm that the frontend displays the data correctly. There is also an optional stretch challenge to connect the API to MongoDB. Although weekly activities are usually done in teams, this one is completed individually.
